@@ -84,7 +84,7 @@ public class Chapter2 {
 
         System.out.println(ericsNameAndFavoriteNumber);
 
-        // the backslash is the 'escape' character - means the next letter is special
+        // the backslash is the 'escape' character - means the next letter is special. this gets the quotations in the output
         System.out.println("My friend O'Shane said \"Hey Eric!\"");
 
         // \n new line - goes down a line
