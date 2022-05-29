@@ -50,7 +50,7 @@ public class Chapter3 {
         char capitalC = 67;
 
         System.out.println(capitalE + "" + capitalR + "" +capitalI + "" +capitalC);
-        /*
+
         boolean trueOrFalseValue = true;
         boolean thisIsFalse = false;
 
@@ -149,6 +149,5 @@ public class Chapter3 {
         String piToSevenDigits = numberFormat.format(pi);
 
         System.out.println(piToSevenDigits);
-        */
     }
 }
