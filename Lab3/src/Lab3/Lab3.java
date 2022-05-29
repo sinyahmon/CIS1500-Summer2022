@@ -10,11 +10,12 @@ public class Lab3 {
     To find the population standard deviation, take each value and subtract the average from it, then square that result.  Sum together all the squared results and then divide by the number of values ( 5 in this case ), the square root of that sum is the population standard deviation.
     After posting, please reply to a classmates post checking their code for following proper variable naming conventions and leave constructive feedback on anywhere they improperly named a variable.
     */
+        //for user input
         Scanner keyboard = new Scanner(System.in);
-
+        //variable declaration for later use
         double minVal = 0.0;
         double maxVal = 0.0;
-
+        //user input numbers
         System.out.println("Please enter a number: ");
         double numberOne = Double.parseDouble(keyboard.nextLine());
         System.out.println("Please enter another number: ");
@@ -25,10 +26,10 @@ public class Lab3 {
         double numberFour = Double.parseDouble(keyboard.nextLine());
         System.out.println("Okay, one more time, another number: ");
         double numberFive = Double.parseDouble(keyboard.nextLine());
-
-       minVal = numberOne;
-       maxVal = numberOne;
-
+        //set user's first number as both minimum and maximum variables as initial numbers
+        minVal = numberOne;
+        maxVal = numberOne;
+        //figuring out minimum value from user inputted values
         if (minVal > numberTwo) {
             minVal = numberTwo;
         }
@@ -41,7 +42,7 @@ public class Lab3 {
         if (minVal > numberFive) {
             minVal = numberFive;
         }
-
+        //figuring out maximum value from user inputted values
         if (maxVal < numberTwo) {
             maxVal = numberTwo;
         }
@@ -54,9 +55,9 @@ public class Lab3 {
         if (maxVal < numberFive) {
             maxVal = numberFive;
         }
-
+        //calculation of average of all user inputted values
         double avgVal = (double)(numberOne + numberTwo + numberThree + numberFour + numberFive) / 5;
-
+        //calculation of standard deviation of all  user inputted values
         double oneSD = (numberOne - avgVal) * (numberOne - avgVal);
         double twoSD = (numberTwo - avgVal) * (numberTwo - avgVal);
         double threeSD = (numberThree - avgVal) * (numberThree - avgVal);
@@ -64,7 +65,7 @@ public class Lab3 {
         double fiveSD = (numberFive - avgVal) * (numberFive - avgVal);
         double sumSD = (double)(oneSD + twoSD + threeSD + fourSD + fiveSD) / 5;
         double finalSD = Math.sqrt(sumSD);
-
+        //output findings
         System.out.println("Minimum: " + minVal);
         System.out.println("Maximum: " + maxVal);
         System.out.println("Average: " + avgVal);
