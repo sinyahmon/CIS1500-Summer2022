@@ -17,7 +17,7 @@ public class Lab4 {
         System.out.println("Let's play Rock Paper Scissors Lizard Spock!");
 
         String continueloop = "";
-        while ( !continueloop.equalsIgnoreCase("n")) {
+        while (continueloop.equalsIgnoreCase("n")) {
             System.out.println("Your Options are: 1-Rock, 2-Paper, 3-Scissors, 4-Lizard, 5-Spock");
             System.out.println("Please enter numbers 1-5 as your choice: ");
             String userChoice = keyboard.nextLine();
