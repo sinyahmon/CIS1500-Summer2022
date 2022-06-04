@@ -4,24 +4,17 @@ import java.text.NumberFormat;
 
 public class Chapter3 {
     public static void main(String[] args) {
-        /* PROMPT:
-        Please have your first post complete by Saturday 5/28 11:59pm and your reply to a classmate in by Tuesday 5/31 11:59pm.
-        For your first post, please post a java program that asks the user to enter 5 values, determines the smallest, largest, average, and standard deviation and displays them.  Please display the values with 3 decimal places of precision.
-        ( Hint - to find the smallest and largest values, assume the first value entered is the smallest and largest, then as new values are entered, if they are larger than the current largest or smaller than the current smallest, update the value )
-        To find the population standard deviation, take each value and subtract the average from it, then square that result.  Sum together all the squared results and then divide by the number of values ( 5 in this case ), the square root of that sum is the population standard deviation.
-        After posting, please reply to a classmates post checking their code for following proper variable naming conventions and leave constructive feedback on anywhere they improperly named a variable.
-        */
         byte smallNumberMin = -128;
         byte smallNumberMax = 127;
 
         short twoByteNumberMin = -32_768;
-        short twoByteNumberMax = - 32_767;
+        short twoByteNumberMax = 32_767;
 
-        //4 Bytes
+        // 4 bytes
         int normalNumberMin = -2_147_483_648;
         int normalNumberMax = 2_147_483_647;
 
-        //8 Bytes
+        // 8 bytes
         long bigWholeNumberMin = -9_223_372_036_854_775_808L;
         long bigWholeNumberMax = 9_223_372_036_854_775_807L;
 
