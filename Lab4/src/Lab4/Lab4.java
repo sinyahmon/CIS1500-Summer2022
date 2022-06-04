@@ -55,10 +55,36 @@ public class Lab4 {
                 System.out.println("You win!");
             } else if (userChoice.equalsIgnoreCase("3") && randomValue == 5) {
                 System.out.println("Computer wins!");
+            } else if (userChoice.equalsIgnoreCase("4") && randomValue == 1) {
+                System.out.println("Computer wins!");
+            } else if (userChoice.equalsIgnoreCase("4") && randomValue == 2) {
+                System.out.println("You win!");
+            } else if (userChoice.equalsIgnoreCase("4") && randomValue == 3) {
+                System.out.println("Computer wins!");
+            } else if (userChoice.equalsIgnoreCase("4") && randomValue == 4) {
+                System.out.println("It's a draw!");
+            } else if (userChoice.equalsIgnoreCase("4") && randomValue == 5) {
+                System.out.println("You win!");
+            } else if (userChoice.equalsIgnoreCase("5") && randomValue == 1) {
+                System.out.println("You win!");
+            } else if (userChoice.equalsIgnoreCase("5") && randomValue == 2) {
+                System.out.println("Computer wins!");
+            } else if (userChoice.equalsIgnoreCase("5") && randomValue == 3) {
+                System.out.println("You win!");
+            } else if (userChoice.equalsIgnoreCase("5") && randomValue == 4) {
+                System.out.println("Computer wins!");
+            } else if (userChoice.equalsIgnoreCase("5") && randomValue == 5) {
+                System.out.println("It's a draw!");
+            } else {
+                System.out.println("Error. Not accounted for.");
             }
 
             System.out.println("would you like to continue? (Y/N): ");
             continueloop = keyboard.nextLine();
+            if (continueloop.equalsIgnoreCase("n")) {
+                System.out.println("Thank you for playing Rock Paper Scissors Lizard Spock!");
+                System.out.println("See you next time :)");
+            }
         }
     }
 }
