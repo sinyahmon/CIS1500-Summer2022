@@ -1,7 +1,5 @@
 package Midterm;
-
 import java.util.Scanner;
-
 public class Midterm {
     public static void main(String[] args) {
         /*
@@ -13,23 +11,27 @@ public class Midterm {
         Allow them to continue purchasing items until they want to be done.
         */
     Scanner keyboard = new Scanner(System.in);
+
     System.out.println("What is the total amount of money you have to spend? :");
     Double totalAmt = Double.parseDouble(keyboard.nextLine());
-    String continueLoop = "";
-    while (continueLoop.equalsIgnoreCase("n")) {
+
+    String continueLoop = "y";
+
+    while (continueLoop.equalsIgnoreCase("y")) {
         System.out.println("What is the price of the item you are buying? :");
         double priceOfItem = Double.parseDouble(keyboard.nextLine());
+
         if (priceOfItem < totalAmt) {
             totalAmt = totalAmt - priceOfItem;
             System.out.println("Your new balance is: " + totalAmt);
-            continue;
         } else if (priceOfItem > totalAmt) {
             System.out.println("You don't have enough money to buy that item.");
-            System.out.println("Your balance is:: " + totalAmt);
-            continue;
+            System.out.println("Your balance is: " + totalAmt);
         } else {
-            System.out.println("Error.");
+            System.out.println("Your balance is: " + totalAmt);
+            System.out.println("You have no money.");
         }
+
         System.out.println("Would you like to continue? (Y/N): ");
         continueLoop = keyboard.nextLine();
         if (continueLoop.equalsIgnoreCase("n")) {
